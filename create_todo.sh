@@ -25,9 +25,9 @@ function cleanup {
 	fi
 }
 
-if [ -x "$(command -v foo)" ]; then 
-	echo "Installing markserv ...."
-	brew install markserv
+if [ -z "$(command -v markserv)" ]; then 
+	echo "<<<Markserv not installed>>>"
+	exit 1
 fi
 
 if [ -f "$FILE_NAME" ]; then
