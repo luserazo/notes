@@ -1,0 +1,12 @@
+# macOS stuff
+.DS_Store
+
+# log files
+*.log
+
+# pid files
+*.pid
+
+# note files
+/*.md
+!/README.md
