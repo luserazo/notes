@@ -39,7 +39,7 @@ else
 		rm -f ${PID_FILE}
 	fi
 	echo "creating file: $FILE_NAME."
-	printf "# Todo $(sed 's/_/-/g' <<< $DATE) (Work)\n " >> $FILE_NAME 
+	printf "# Todo $(sed 's/_/-/g' <<< $DATE)\n " >> $FILE_NAME 
 	mkdir -p "${LOG_DIR}"
 	mkdir -p "${TMP_DIR}"
 	markserv $FILE_NAME >> "${LOG_DIR}/${DATE}.log" 2>&1 & 
