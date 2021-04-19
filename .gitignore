@@ -9,4 +9,5 @@
 
 # note files
 /*.md
+/*.swp
 !/README.md
